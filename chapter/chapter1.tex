@@ -1,0 +1,87 @@
+\chapter{绪论}\label{chp:intro}
+\section{引言}\label{sec:intro}
+这里是绪论引言。
+\section{有待研究的问题}\label{sec:problems}
+这里是有待研究的问题。
+\section{本文工作}\label{sec:works}
+这里是本文工作。
+\section{论文组织}\label{sec:problems}
+论文组织示意图如图\ref{fig:chp1-logic}~所示。
+\begin{figure}[h]\centering
+\tikz \node [scale=0.65, inner sep=0] {
+\tikzset{%
+  >={Latex[width=2mm,length=2mm]},
+  % Specifications for style of nodes:
+            base/.style = {rectangle, rounded corners, draw={rgb:red,4;yellow,2},
+                            text width=4cm, minimum height=1.75cm,
+                            text centered,
+                            copy shadow={draw, fill={rgb:red,4;yellow,2}, 
+                            shadow xshift=-1.5mm, shadow yshift=1.5mm}},
+        category/.style = {rectangle, rounded corners, draw={rgb:orange,2;yellow,2},
+                            text width=3.75cm, minimum height=2cm,
+                            text centered,
+                            copy shadow={draw, fill={rgb:orange,2;yellow,2}, 
+                            shadow xshift=-1.5mm, shadow yshift=1.5mm}},
+           model/.style = {rectangle, rounded corners, draw=black!30!green,
+                            text width=3.75cm, minimum height=2cm,
+                            text centered,
+                            copy shadow={draw, fill=black!30!green, 
+                            shadow xshift=-1.5mm, shadow yshift=1.5mm}},
+          method/.style = {rectangle, rounded corners, draw={rgb:red,4;green,1},
+                            text width=3.75cm, minimum height=1.75cm,
+                            text centered,
+                            copy shadow={draw, fill={rgb:red,4;green,1}, 
+                            shadow xshift=-1.5mm, shadow yshift=1.5mm}},
+}
+\begin{tikzpicture}[framed, background rectangle/.style={draw=gray!15, bottom color=gray!15, top color=gray!15, rounded corners}, 
+    node distance=3.5cm,
+    every node/.style={fill=white, font=\sffamily\large}, align=center]
+  % Specification of nodes (position, etc.)
+  \node (thesis)            [base, line width=0.5mm]                                                      
+                            {毕业论文};
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                          
+  \node (cate1)             [category, below of=thesis, xshift=-5cm, line width=0.5mm]
+                            {归档1};
+  \node (cate2)             [category, below of=thesis, xshift=5cm, line width=0.5mm]
+                            {归档2};
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                          
+  \node (model1)            [model, below of=cate1, xshift=-2.25cm, line width=0.5mm]
+                            {模型1};         
+  \node (model2)            [model, below of=cate1, xshift=2.25cm, line width=0.5mm]
+                            {模型2};    
+  \node (model3)            [model, below of=cate2, xshift=-2.25cm, line width=0.5mm]
+                            {模型3};
+  \node (model4)            [model, below of=cate2, xshift=2.25cm, line width=0.5mm]
+                            {模型4};
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                          
+  \node (method1)           [method, below of=model1, line width=0.5mm]  
+                            {方法1};
+  \node (method2)           [method, below of=model2, line width=0.5mm]  
+                            {方法2};
+  \node (method3)           [method, below of=model3, line width=0.5mm]  
+                            {方法3};
+  \node (method4)           [method, below of=model4, line width=0.5mm]  
+                            {方法4};
+]
+\draw[line width=0.5mm, color=gray!15]                                             (-9.35,-11.5) -- (-9.35,1.25);
+\draw[line width=0.5mm, color=gray!15]                                                   (-9.5,1.2) -- (9.5,1.2);
+\draw[line width=0.5mm, color={rgb:red,4;yellow,2}]                                         (thesis) -- (0,-1.5);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color={rgb:red,4;yellow,2}]                      (0,-1.5) -| (-5,-2.25);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color={rgb:red,4;yellow,2}]                       (0,-1.5) -| (5,-2.25);
+\draw[line width=0.5mm, color={rgb:orange,2;yellow,2}]                                     (cate1) -- (-5,-5.25);
+\draw[line width=0.5mm, color={rgb:orange,2;yellow,2}]                                      (cate2) -- (5,-5.25);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color={rgb:orange,2;yellow,2}]              (-5,-5.25) -| (-2.75,-5.85);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color={rgb:orange,2;yellow,2}]              (-5,-5.25) -| (-7.25,-5.85);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color={rgb:orange,2;yellow,2}]                (5,-5.25) -| (2.75,-5.85);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color={rgb:orange,2;yellow,2}]                (5,-5.25) -| (7.25,-5.85);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color=black!30!green]                         (model1) -- (-7.25,-9.35);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color=black!30!green]                         (model2) -- (-2.75,-9.35);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color=black!30!green]                          (model3) -- (2.75,-9.35);
+\draw[-{>[scale=1.5]}, line width=0.5mm, color=black!30!green]                          (model4) -- (7.25,-9.35);
+\end{tikzpicture}
+};
+\caption{论文组织}
+\label{fig:chp1-logic}
+\end{figure}
+
+

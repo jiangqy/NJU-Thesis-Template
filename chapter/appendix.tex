@@ -1,0 +1,77 @@
+\chapter{符号及简称说明}\label{chp:appendix}
+\section{本文使用的符号}
+表\ref{tab:appendix-notaions}中列出了一些本文使用的通用符号。
+\begin{table}[H]
+\centering
+\caption{本文使用的符号}
+\label{tab:appendix-notaions}
+\begin{tabular}{ll}
+\toprule
+符号                    &    说明                                    \\\midrule
+$\varnothing$          &    空集                                    \\
+$\RB$                  &    实空间                                   \\
+$\RB^c$                &    $c$维实空间                              \\ 
+$\{-1,+1\}^c$          &    $c$维二值空间                            \\
+$\B$                   &    大写黑体字母，矩阵                        \\
+$\B_{i*}$              &    矩阵$\B$的第$i$行                        \\
+$\B_{*j}$              &    矩阵$\B$的第$j$列                        \\
+$B_{ij}$               &    矩阵$\B$中行标为$i$，列标为$j$的元素        \\
+$\b$                   &    小写黑体字母，列向量                       \\
+$b_i$                  &    向量$\b_i$的第$i$个元素                   \\
+$\I_n$                 &    维度为$n\times n$的单位矩阵               \\
+$\bone_d$              &    元素全部为1的$d$维向量                    \\
+$\bone_{n\times n}$    &    元素全部为1的$n\times n$的矩阵            \\
+$\bzero_d$             &    元素全部为0的$d$维向量                    \\
+$\bzero_{n\times n}$   &    元素全部为0的$n\times n$的矩阵            \\
+$\B^\top$              &    矩阵$\B$的转置                           \\
+$\B\succeq\bzero$      &    半正定矩阵                               \\
+$\A\succeq\B$          &    矩阵$\A-\B$为半正定矩阵                   \\
+$\B\succ\bzero$        &    正定矩阵                                \\
+$\A\succ\B$            &    矩阵$\A-\B$为正定矩阵                    \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+此外，一些函数定义如下。
+\begin{itemize}
+\item 矩阵的迹：
+\begin{align}
+\tr(\B)=\sum_{i=1}^nB_{ii}.\label{fun:appendix-trace}
+\end{align}
+\item 向量的2范数：
+\begin{align}
+\Vert\b\Vert_2=\sqrt{\sum_{i=1}^nb_i^2}.\label{fun:appendix-2norm}
+\end{align}
+\item 矩阵的Frobenius范数：
+\begin{align}
+\Vert\B\Vert_F=\sqrt{\sum_{i,j=1}^nB_{ij}^2}.\label{fun:appendix-Fnorm}
+\end{align}
+\item 矩阵的1范数：
+\begin{align}
+\Vert\B\Vert_1=\sum_{i,j=1}^n\vert B_{ij}\vert.\label{fun:appendix-1norm}
+\end{align}
+\item 指示函数：
+\begin{align}
+\hone(condition)=\left\{
+\begin{array}{ll}
+1   & \text{if } condition \text{ is true},\\
+0   & \text{otherwise.}
+\end{array}
+\right.\label{fun:appendix-indicator}
+\end{align}
+\end{itemize}
+
+\section{简称说明}
+表\ref{tab:appendix-abbr}列出了一些本文使用的简称的含义。
+\begin{longtable}{ll}
+\caption{本文使用的通用简称}
+\label{tab:appendix-abbr}
+\endfirsthead
+\endhead
+\toprule
+简称         & 全称                                                   \\\midrule
+BQP         & Binary Quadratic Programming，离散二次规划               \\
+PQ          & Product Quantization，乘积量化                          \\
+\bottomrule
+\end{longtable}
+
